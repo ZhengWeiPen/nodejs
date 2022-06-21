@@ -58,6 +58,7 @@ class ReadLabel {
     }
 }
 
+
 new ReadLabel({
     cssName: 'index.css',
     scriptName: 'index.js',
