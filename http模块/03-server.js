@@ -1,6 +1,7 @@
 // 导入模块
 import { default as http } from 'http'
 import { default as fs } from 'fs'
+import { default as path } from 'path'
 
 let html = '',css = '',js = ''
 
@@ -8,7 +9,8 @@ let html = '',css = '',js = ''
 const server = http.createServer()
 
 server.on("request", (req, resp) => {
-    
+    console.log(path.resolve())
+
     let content = `<h1>404 Not Found</h1>`
     resp.statusCode = 404
 
